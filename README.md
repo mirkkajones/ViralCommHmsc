@@ -1,12 +1,12 @@
 # **ViralCommHmsc**
 
-This repository accompanies the manuscript **"To be named"** by Jokinen et al. and will eventually provides all necessary R scripts and data to reproduce the manuscript's results.
+This repository will accompany the manuscript **"To be named"** by Jokinen et al. and will eventually provide all R scripts and data required to reproduce the manuscript's results.
    		  
    		  
-**Disclaimer**: The code in this repository represents a version developed for the project, which may still undergo revisions.
+**Disclaimer**: The code in this repository represents a work in progress and may still undergo revisions.
 
 **Authors**: The code was developed in a collaboration between Mirkka Jones and Otso Ovaskainen.
 
 
-**Contacts:**     
+**Contacts:**
 Mirkka Jones - mirkka.jones@helsinki.fi
