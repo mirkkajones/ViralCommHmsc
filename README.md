@@ -5,7 +5,7 @@ This repository will accompany the manuscript **"The first arriving virus shapes
    		  
 **Disclaimer**: The code in this repository represents a work in progress and may still undergo revisions.
 
-**Authors**: The code was developed in a collaboration between Mirkka Jones and Otso Ovaskainen.
+**Authors**: The scripts were developed in a collaboration between Otso Ovaskainen and Mirkka Jones and are based on use of the Hmsc R package.
 
 
 **Contacts:**
