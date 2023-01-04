@@ -5,7 +5,7 @@ This repository will accompany the manuscript **"The first arriving virus shapes
    		  
 **Disclaimer**: The code in this repository represents a work in progress and may still undergo revisions.
 
-**Authors**: The scripts were developed in a collaboration between Otso Ovaskainen and Mirkka Jones and are based on use of the Hmsc R package.
+**Authors**: The scripts were adapted by Mirkka Jones from Hmsc course scripts written by Hmsc-developers Otso Ovaskainen, Jari Oksanen, and others, of which later versions are available at https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc
 
 
 **Contacts:**
