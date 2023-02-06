@@ -7,4 +7,4 @@ This repository accompanies the manuscript **"The first arriving virus shapes wi
 **Authors**: The scripts were adapted by Mirkka Jones from Hmsc course scripts 2020 written by Hmsc-developers Otso Ovaskainen, Jari Oksanen, and others, of which later versions are available at https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc
 
 **Contacts:**
-Mirkka Jones - mirkka.jones@helsinki.fi
+Mirkka Jones at helsinki.fi.
