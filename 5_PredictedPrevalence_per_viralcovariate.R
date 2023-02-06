@@ -11,7 +11,7 @@ m = models[[1]]
 covariates = all.vars(m$XFormula)[2:4]
 covariatenames = c("Closterovirus T1", "Betapartitivirus T1", "P. lanceolata latent virus T1")
 taxanames = c("CLOS", "ENAM", "BETA", "PILV", "CAUL")
-PDFnames = c("PRED_prev_by_genotype_vs_ClosteroT1_check.pdf", "PRED_prev_by_genotype_vs_BetapartitiT1_check.pdf", "PRED_prev_by_genotype_vs_PilvT1_check.pdf")
+PDFnames = c("PRED_prev_by_genotype_vs_ClosteroT1.pdf", "PRED_prev_by_genotype_vs_BetapartitiT1.pdf", "PRED_prev_by_genotype_vs_PilvT1.pdf")
 
 for(n in 1:3)
 {
@@ -96,7 +96,7 @@ for(n in 1:3)
   }
   #Reorder data columns and export data as a csv file
   predictions_per_virus_T1 = predictions_per_virus_T1[,c(5:7, 1:4)]
-  write.csv2(predictions_per_virus_T1, paste0("BarplotData_", covariates[n], "_check.csv"), row.names = FALSE)
+  write.csv2(predictions_per_virus_T1, paste0("BarplotData_", covariates[n], ".csv"), row.names = FALSE)
 }
 
 
