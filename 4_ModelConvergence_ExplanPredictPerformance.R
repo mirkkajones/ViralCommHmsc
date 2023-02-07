@@ -7,6 +7,7 @@ library(vioplot)
 load("models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
 
+#set the random number seed to make the results reproducible
 set.seed(1)
 
 #Check beta parameter convergence
