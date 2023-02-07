@@ -1,6 +1,8 @@
 setwd() 
+
 library(Hmsc)
 
+#Load unfitted Hmsc model created by script 1.
 load(file = "unfitted_models.Rdata")
 
 nChains = 4
