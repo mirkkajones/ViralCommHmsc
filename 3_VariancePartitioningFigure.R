@@ -7,6 +7,7 @@ library(pals)
 load("models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
 
+#Calculate variation partitioning (fractions of variance explained by the model's fixed and random effects per virus) and barplot the result:
 pdf("VarPart.pdf", width = 6, height = 5)
 par(mar = c(5, 5, 3, 8.5), lwd = 0.1)
 {
