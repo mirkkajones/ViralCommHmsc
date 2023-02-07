@@ -8,6 +8,9 @@ library(abind)
 load("models/models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
 
+#set the random number seed to make the results reproducible
+set.seed(1)
+
 covariates = all.vars(m$XFormula)[2:4]
 covariatenames = c("Closterovirus T1", "Betapartitivirus T1", "P. lanceolata latent virus T1")
 taxanames = c("CLOS", "ENAM", "BETA", "PILV", "CAUL")
