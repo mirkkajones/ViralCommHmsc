@@ -1,6 +1,6 @@
 setwd()
 
-load("models/models_thin_5000_samples_250_chains_4.Rdata")
+load("models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
 
 library(Hmsc)
