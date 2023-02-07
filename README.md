@@ -1,6 +1,6 @@
 # **ViralCommHmsc**
 
-This repository accompanies the manuscript **"The first arriving virus shapes within-host viral community assembly during natural epidemics"** by Maija Jokinen et al. and provides R scripts and data required to reproduce the manuscript's results.
+This repository accompanies the manuscript **"The first arriving virus shapes within-host viral community assembly during natural epidemics"** by Maija Jokinen et al. and provides the R scripts and their initial input data that are required to reproduce the manuscript's Hmsc joint species distributional modelling results.
    		  
 **Disclaimer**: The code in this repository may still undergo revisions.
 
