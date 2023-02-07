@@ -1,4 +1,5 @@
 setwd() 
+
 library(Hmsc)
 
 load(file="allData.R")
@@ -44,9 +45,6 @@ for(n in 1:ncol(Y))
   XData[[n]] = selection
 }
 
-names(S) = "PlantID"
-# Add plant population of origin to matrix S, in addition to the plant ID column.
-S$Population = X$Population
 
 # Define the StudyDesign matrix and two random effects: plant individual ID and plant population of origin:
 studyDesign = data.frame(plant = as.factor(S$PlantID), population = as.factor(S$Population))
@@ -67,4 +65,4 @@ models = list(m1)
 modelnames = c("presence_absence")
 
 #Save the unfitted model structure and model name
-save(models,modelnames,file = file.path(ModelDir, "unfitted_models.Rdata"))
+save(models,modelnames,file = "unfitted_models.Rdata")
