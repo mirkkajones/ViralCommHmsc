@@ -56,6 +56,8 @@ for(n in 1:3)
       predictions_per_virus_T1[2, paste(taxon, covariate, "abs", paste0("G", g), sep = "_")] = me[1]
       predictions_per_virus_T1[2, paste(taxon, covariate, "pres", paste0("G", g), sep = "_")] = me[2]
       
+      # Pr quantifies how often, across 1000 posterior predictions, the predicted late summer occurrence of each viral taxon in the
+      # response matrix is greater when the predictor virus (selected X covariate) is present vs absent in Plantago in the early summer.
       Pr = mean(tmp[2,virus,]>tmp[1,virus,])
       
       predictions_per_virus_T1[4, paste(taxon, covariate, "abs", paste0("G", g), sep = "_")] = Pr
