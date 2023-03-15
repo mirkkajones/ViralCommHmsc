@@ -18,3 +18,12 @@ par(mar = c(6, 6, 3, 2), lwd = 0.1)
            cex=c(0.6,0.6,0.8))
 }
 dev.off()
+
+
+#Extract posterior beta means, lower and upper 95% credible intervals and medians. 
+
+mpost = convertToCodaObject(m)
+CIs = summary(mpost$Beta)
+betatable = data.frame(CIs[[1]][, 1], CIs[[2]][, c(3, 1, 5)])
+names(betatable) = c("mean", "median", "lower_CI_2.5%", "upper_CI_97.5%")
+write.csv2(betatable, "Betamean_median_CIs.csv", row.names = T)
