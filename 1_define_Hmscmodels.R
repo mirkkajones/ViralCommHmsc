@@ -25,6 +25,8 @@ X$CLOSTERO_T1 = as.factor(X$CLOSTERO_T1)
 X$BETAPARTITI_T1 = as.factor(X$BETAPARTITI_T1)
 X$PILV_T1 = as.factor(X$PILV_T1)
 
+names(X)[7:8] = c("HERBIVORY", "Plant.area")
+
 # Define the Hmsc model Xformula: 
 # X covariates are plant genotype, presence/absence of three viral taxa at time point 1, 
 # herbivory and area of the host plant, and the number (if any) of samples used to define late summer 
@@ -38,13 +40,11 @@ XFormula = ~ Genotype + CLOSTERO_T1 + BETAPARTITI_T1 + PILV_T1 + HERBIVORY + Pla
 XData = list()
 for(n in 1:ncol(Y))
 {
-  species = colnames(Y)[n]
-  missingvalues = names(X)[grep(paste0("NAs_T2_T4_", colnames(Y)[n]), names(X))]
-  selection = X[, c("Genotype", "CLOSTERO_T1", "BETAPARTITI_T1", "PILV_T1" ,  "HERBIVORY", "Plant.area", missingvalues)]
-  names(selection)[7] = "viral_NAs"
-  XData[[n]] = selection
+  Xdataprep = X
+  if(n > 3)
+  {Xdataprep$viral_NAs == 0}
+  XData[[n]] = Xdataprep
 }
-
 
 # Define the StudyDesign matrix and two random effects: plant individual ID and plant population of origin:
 studyDesign = data.frame(plant = as.factor(S$PlantID), population = as.factor(S$Population))
