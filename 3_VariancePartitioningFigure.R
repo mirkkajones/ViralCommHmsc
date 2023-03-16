@@ -15,6 +15,6 @@ par(mar = c(5, 5, 3, 8.5), lwd = 0.1)
   VP = computeVariancePartitioning(m, group = attr(m$X[[1]], "assign"), groupnames = attr(terms(m$XFormula), "term.labels"))
   mycols = tol(nrow(VP$vals))
   barplot(VP$vals, ylim = c(0,1), cex.lab = 0.8, ylab = "Fractions of variance explained", cex.axis = 0.7, col = mycols, las=2, horiz=FALSE, cex.names = 0.6)
-  legend("topright", inset = c(-0.48, 0), xpd=TRUE, legend = rev(c(names(m$XData[[1]]), "Random (plant)", "Random (population)")), fill = rev(mycols), bty = "n", cex = 0.8)
+  legend("topright", inset = c(-0.48, 0), xpd=TRUE, legend = rev(c(all.vars(m$XFormula), "Random (plant)", "Random (population)")), fill = rev(mycols), bty = "n", cex = 0.8)
 }
 dev.off()
