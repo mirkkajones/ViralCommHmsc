@@ -5,7 +5,7 @@ library(ggplot2)
 library(gridExtra)
 library(abind)
 
-load("models/models_thin_5000_samples_250_chains_4.Rdata")
+load("models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
 
 #set the random number seed to make the results reproducible
