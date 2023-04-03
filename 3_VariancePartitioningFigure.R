@@ -19,3 +19,5 @@ par(mar = c(5, 5, 3, 8.5), lwd = 0.1)
   legend("topright", inset = c(-0.48, 0), xpd=TRUE, legend = rev(c(all.vars(m$XFormula), "Random (plant)", "Random (population)")), fill = rev(mycols), bty = "n", cex = 0.8)
 }
 dev.off()
+
+VPtable = round(VP$vals, 2)
