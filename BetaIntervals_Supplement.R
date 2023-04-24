@@ -1,15 +1,13 @@
 library(Hmsc)
 library(ggplot2)
 
-
-load("MJ_models_thin_5000_samples_250_chains_4.Rdata")
+load("models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
 mpost = convertToCodaObject(m)
 CIs = summary(mpost$Beta)
 betatable = data.frame(rownames(CIs[[1]]),CIs[[1]][, 1], CIs[[2]][, c(3, 1, 5)])
 names(betatable) = c("parameter","mean", "median", "lower_CI", "upper_CI")
 betatable$dataset <- "pooled"
-
 
 load("MJ_T2_models_thin_5000_samples_250_chains_4.Rdata")
 m = models[[1]]
